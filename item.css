@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+body{
+    background-color: black;
+}
+#title{
+    float: left;
+    font-family: raleway;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 1.5vw 0 0 1.5vw;
+}
+ul {
+    list-style-type: none;
+    margin-right: 2vw;
+    padding: 0;
+    overflow: hidden;
+    font-family: raleway;
+  }
+  
+  li {
+    float: right;
+    font-size: 1vw;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5vw 1.5vw;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: grey;
+  }
+
+  #des{
+    position: absolute;
+    line-height: 2;
+    font-size: 1vw;
+    text-align:justify;
+    color:white;
+    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: raleway;
+  }
+  .slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vw;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+  }
+  .slide {
+    float: left;
+    position: relative;
+  }
+  #slide1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -1.5vw;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 0.8vw;
+    width: 0.8vw;
+    border-radius: 50px;
+    background-color: darkblue;
+  }

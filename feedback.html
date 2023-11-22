@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <script src="./feedback.js" defer></script>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <h1 id="title">Feedback</h1>
+    <ul>
+        <li><a class="active" href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="homePage.html">Home</a></li>
+    </ul>
+    <div class="container">
+        <div id="app">
+            <div class="title">
+                <h1>Comments</h1>
+            </div>
+
+            <div class="inputs">
+                <div class="field">
+                    <Label for="name_input">Name</Label>
+                    <input type="name" id="name_input" placeholder="Enter Name" v-model="name">
+                </div>
+
+                <div class="field">
+                    <Label for="comment_input">Comment</Label>
+                    <textarea name="comment_input" id="comment_input" v-model="comment"></textarea>
+                </div>
+
+                <div class="btn">
+                    <button id="bt" @click="setComment">Comment</button>
+                </div>
+            </div>
+
+            <div class="list">
+                <h2>Comments</h2>
+                <ul>
+                    <li v-for="(item) in comments">
+                        <div class="name">
+                            <h3>{{ item.name }}</h3>
+                        </div>
+
+                        <div class="comment">
+                            <p>{{ item.comment }}</p>
+                        </div>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

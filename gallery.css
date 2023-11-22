@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+body{
+    background-color: black;
+}
+#title{
+    float: left;
+    font-family: raleway;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 1vw 0 0 1.5vw;
+}
+ul {
+    list-style-type: none;
+    margin-right: 2vw;
+    padding: 0;
+    overflow: hidden;
+    font-family: raleway;
+  }
+  
+  li {
+    float: right;
+    font-size: 1vw;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5vw 1.5vw;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: grey;
+
+  }
+  .active {
+    text-decoration: underline;
+  }
+
+  #gal{
+    margin: 2vw 0 0 1.5vw;
+    position: absolute;
+  }
+.img{
+    position: absolute;
+}
+  img{
+    border: white solid 5px;
+    height: 16vw;
+    width: 21vw;
+    cursor: pointer;
+    position: relative;
+  }
+#img2,#img6,#img10,#img14,#img18,#img22{
+    margin-left: 24.5vw;
+}
+
+#img3,#img7,#img11,#img15,#img19,#img23{
+    margin-left: 49vw;
+}
+
+#img4,#img8,#img12,#img16,#img20,#img24{
+    margin-left: 73.5vw;
+}
+
+#img5,#img6,#img7,#img8{
+    margin-top: 19.5vw;
+}
+
+#img9,#img10,#img11,#img12{
+    margin-top: 38vw;
+}
+
+#img13,#img14,#img15,#img16{
+    margin-top: 57.5vw;
+}
+
+#img17,#img18,#img19,#img20{
+    margin-top: 77vw;
+}
+
+#img21,#img22,#img23,#img24{
+    margin-top: 96.5vw;
+}
+
+img:hover{
+    border: red solid 5px;
+    display: block;
+    z-index:10;
+    height: auto;
+    width:50vw;
+}
+
+#img3:hover,#img7:hover,#img11:hover,#img15:hover,#img19:hover,#img23:hover,#img4:hover,#img8:hover,#img12:hover,#img16:hover,#img20:hover,#img24:hover{
+margin-left:23vw;
+}
+

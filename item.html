@@ -1,0 +1,42 @@
+<html>
+<head>
+  
+    <link rel="stylesheet" href="item.css">
+    <script>
+      function getData() {
+        var tt = localStorage.getItem("tt");
+        var para = localStorage.getItem("para")
+        var img1 = localStorage.getItem("img1");        
+        document.getElementById("title").innerHTML = tt;
+        document.getElementById("des").innerHTML = para;
+
+      }
+    </script>
+</head>
+<body onload="getData()">
+    <h1 id="title"></h1>
+    <ul>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="homePage.html">Home</a></li>
+    </ul>
+    <div class="slider">
+        <span id="slide1"></span>
+        <span id="slide2"></span>
+        <span id="slide3"></span>
+        <div class="image-container">
+          <img id="img1" src="" class="slide" width="500" height="300" />
+          <img id="img2" src="" class="slide" width="500" height="300" />
+          <img id="img3" src="" class="slide" width="500" height="300" />
+        </div>
+        <div class="buttons">
+          <a href="#slide1"></a>
+          <a href="#slide2"></a>
+          <a href="#slide3"></a>
+        </div>
+      </div>
+      <p id="des"></p>
+</body>
+
+</html>

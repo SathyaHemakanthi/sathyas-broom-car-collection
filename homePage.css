@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+*{
+  margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+#header{
+    height: 78%;
+    width: 100%;
+    background: url('./images/main1.jpg') no-repeat;
+    background-size: cover;
+}
+/*title*/
+#title{
+    float: left;
+    font-family: ink free;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 1vw 0 0 1vw;
+}
+
+/*navigation bar css*/
+ul {
+    list-style-type: none;
+    margin-right: 4vw;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    font-size: 1vw;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5vw 1.5vw;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: grey;
+
+  }
+  .active {
+    text-decoration: underline;
+  }
+
+  /*main image*/
+  img{
+    width: 100%;
+    height: 75%;
+    position: relative;
+    margin: 0vh 0vh 0vh 0vh;
+  }
+
+  #body1{
+    height: 7vw;
+    font-family: raleway;
+  }
+
+  #body1right{
+    margin: 2vw 3vw;
+    float: right;
+    width: 45%;
+  }
+
+  #body1left{
+    width: 45%;
+    float: left;
+  }
+
+  #imgbody1{
+    height: 32vw;
+  }
+
+  #title2{
+    margin-top: 3vw;
+    font-size: 3vw;
+  }
+
+  #introduction{
+    line-height: 2;
+    font-size: 1.5vw;
+    text-align:justify;
+  }
+
+  #body2{
+    font-family: raleway;
+    margin: 30vw 3vw;
+    height: 18vw;
+  }
+
+  #item1,#item2, #item3, #item4, #item5, #item6, #item7, #item8{
+    padding: 1vw;
+    background-color: silver;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 7px;
+    position: absolute;
+  }
+
+  #s1{
+    padding-bottom: 1vw;
+  }
+
+  #ttI1{
+    color: black;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+  }
+  span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #item2,#item6{
+    margin-left: 24.5vw;
+  }
+  #item3,#item7{
+    margin-left: 49vw;
+  }
+  #item4,#item8{
+    margin-left: 73.5vw;
+  }
+
+  #item5,#item6,#item7,#item8{
+    margin-top: 21vw;
+  }
+ #footer{
+background-color: gray;
+    color: black;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+ }
+
+ #mail{
+    color: darkblue;
+ }
